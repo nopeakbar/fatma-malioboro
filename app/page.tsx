@@ -549,16 +549,22 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="col-span-2 row-span-2 relative h-64 md:h-96 rounded-lg overflow-hidden">
-                <img src="/api/placeholder/800/800" alt="Kegiatan 1" className="w-full h-full object-cover hover:scale-105 transition duration-500"/>
+                <img src="/kegiatan/k4.jpeg" alt="Kegiatan 1" className="w-full h-full object-cover hover:scale-105 transition duration-500"/>
             </div>
             <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <img src="/api/placeholder/400/400" alt="Kegiatan 2" className="w-full h-full object-cover hover:scale-105 transition duration-500"/>
+                <img src="/kegiatan/k2.jpeg" alt="Kegiatan 2" className="w-full h-full object-cover hover:scale-105 transition duration-500"/>
             </div>
             <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <img src="/api/placeholder/400/400" alt="Kegiatan 3" className="w-full h-full object-cover hover:scale-105 transition duration-500"/>
+                <img src="/kegiatan/k3.jpeg" alt="Kegiatan 3" className="w-full h-full object-cover hover:scale-105 transition duration-500"/>
             </div>
             <div className="col-span-2 relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <img src="/api/placeholder/800/400" alt="Kegiatan 4" className="w-full h-full object-cover hover:scale-105 transition duration-500"/>
+                <img src="/kegiatan/k1.jpeg" alt="Kegiatan 4" className="w-full h-full object-cover hover:scale-105 transition duration-500"/>
+            </div>
+            <div className="col-span-2 relative h-32 md:h-48 rounded-lg overflow-hidden">
+                <img src="/kegiatan/k5.jpeg" alt="Kegiatan 4" className="w-full h-full object-cover hover:scale-105 transition duration-500"/>
+            </div>
+            <div className="col-span-2 relative h-32 md:h-48 rounded-lg overflow-hidden">
+                <img src="/kegiatan/k6.jpeg" alt="Kegiatan 4" className="w-full h-full object-cover hover:scale-105 transition duration-500"/>
             </div>
           </div>
         </div>
