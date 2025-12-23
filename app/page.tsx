@@ -15,38 +15,38 @@ interface Product {
 const teamMembers = [
   { 
     name: "Dr. Ir. Catur Aries Rokhmana, S.T., M.T.", 
-    nim: "Dosen Pembimbing", 
-    role: "Supervisor",
+    // nim: "Dosen Pembimbing", 
+    role: "Dosen Pembimbing",
     foto: "/team/pak-catur.jpeg" 
   },
   { 
     name: "Rizal Ahmad Fahreza", 
     nim: "22/505334/TK/55290", 
-    role: "Surveyor & Processing",
+    // role: "Surveyor & Processing",
     foto: "/team/rizal.jpeg" 
   },
   { 
     name: "Abil Pilar Surastu", 
-    nim: "22/504906/TK/55236", 
-    role: "Surveyor & Processing",
+    nim: "22/504138/TK/55123", 
+    // role: "Surveyor & Processing",
     foto: "/team/abil.jpeg" 
   },
   { 
     name: "Zahra Nico Fadla", 
-    nim: "Dosen Pembimbing", 
-    role: "Supervisor",
+    nim: "22/503974/TK/55102", 
+    // role: "Supervisor",
     foto: "/team/zahra.jpeg" 
   },
   { 
     name: "Fatma Riziqiamurti Arina", 
-    nim: "22/505334/TK/55290", 
-    role: "Surveyor & Processing",
+    nim: "22/504906/TK/55236", 
+    // role: "Surveyor & Processing",
     foto: "/team/fatma.jpeg" 
   },
   { 
     name: "Alif Zacky Gunawan", 
-    nim: "22/504906/TK/55236", 
-    role: "Surveyor & Processing",
+    nim: "22/497524/TK/54529", 
+    // role: "Surveyor & Processing",
     foto: "/team/alif.jpeg" 
   },
 ];
@@ -68,7 +68,7 @@ const products = [
     images: ["/bangunan/gereja.jpeg", "/sketchup/sgereja.jpeg"] 
   },
   { 
-    name: "Kantor Pos Besar", 
+    name: "Kantor Pos", 
     desc: "Gedung Kantor Pos Besar di Titik Nol Kilometer Yogyakarta merupakan bangunan bersejarah peninggalan kolonial Belanda yang telah berfungsi sebagai kantor pos sejak awal abad ke-20. Bangunan ini mulai dibangun pada tahun 1912 dengan gaya arsitektur khas Belanda dan awalnya dikenal sebagai Post, Telegraaf en Telefoon Kantoor.", 
     images: ["/bangunan/kantor-pos.jpeg", "/sketchup/spos.jpeg"] 
   },
@@ -88,28 +88,28 @@ const products = [
 const workflows = [
   { 
     title: "Studi Literatur & Survei", 
-    desc: "Studi pendahuluan dan survei awal lokasi sepanjang Malioboro - Titik Nol KM.",
-    image: "/workflow/step1.jpeg" 
+    desc: "ahapan awal meliputi studi literatur terkait spesifikasi dan pengoperasian alat Mobile LiDAR SLAM Geosun GS-100G sesuai SOP. Selanjutnya dilakukan observasi lapangan untuk menentukan area survei, jalur pengukuran, kondisi lingkungan, serta waktu akuisisi yang optimal.",
+    image: "/workflow/studi.jpeg" 
   },
   { 
     title: "Akuisisi Data", 
-    desc: "Pengambilan data lapangan menggunakan Mobile LiDAR SLAM untuk menangkap geometri kompleks.",
-    image: "/workflow/step2.jpeg" 
+    desc: " Pengumpulan data dilakukan menggunakan Mobile LiDAR SLAM untuk merekam geometri fasad bangunan di kawasan Titik Nol Kilometer Yogyakarta secara detail dan efisien. Akuisisi data dilakukan secara mobile tanpa titik kontrol, dengan dukungan koneksi ke stasiun CORS, mengikuti jalur pengukuran di kedua sisi koridor Jalan Malioboro dengan kecepatan pemindaian yang stabil.",
+    image: "/workflow/akuisisi.jpeg" 
   },
   { 
     title: "Processing Point Cloud", 
-    desc: "Registrasi dan filtering data mentah (format .LAS) menggunakan Cloud Compare.",
-    image: "/workflow/step3.jpeg" 
+    desc: "Pengolahan data dilakukan terhadap point cloud hasil akuisisi Mobile LiDAR SLAM untuk menghasilkan model 3D fasad bangunan. Tahapan pengolahan meliputi konversi format data ke LAS, filtering dan registrasi point cloud untuk menghilangkan noise dan menyelaraskan data, rekonstruksi model 3D berbasis point cloud, serta texturing untuk menghasilkan model fasad yang representatif dan realistis.",
+    image: "/workflow/processing.jpeg" 
   },
   { 
     title: "3D Modeling", 
-    desc: "Rekonstruksi model fasad bangunan menggunakan perangkat lunak SketchUp.",
-    image: "/workflow/step4.jpeg" 
+    desc: "Pemodelan 3D fasad bangunan dilakukan menggunakan SketchUp Pro 2024 dengan Level of Detail (LoD) 3, berbasis data point cloud hasil Mobile LiDAR SLAM. Point cloud digunakan sebagai acuan pembentukan geometri fasad agar mendekati kondisi eksisting. Model yang dihasilkan kemudian diberi tekstur dan digunakan sebagai dokumentasi serta inventarisasi digital kawasan Titik Nol Kilometer Yogyakarta.",
+    image: "/workflow/3d.jpeg" 
   },
   { 
     title: "Uji Akurasi", // Judul diupdate
     desc: "Uji akurasi model 3D dilakukan melalui evaluasi dimensi dan posisi. Akurasi dimensi dinilai dengan membandingkan ukuran geometrik model terhadap data pengukuran lapangan, sedangkan akurasi posisi dianalisis berdasarkan selisih koordinat antara model 3D dan data referensi GPS Geomate untuk menilai ketelitian spasial dalam sistem koordinat yang digunakan.",
-    image: "/workflow/step5.jpeg",
+    image: "/workflow/akurasi.jpeg",
     points: [
       "Uji akurasi dimensi mengacu pada standar LoD 3",
       "Uji akurasi posisi mengacu pada standar LoD 3"
@@ -118,19 +118,19 @@ const workflows = [
   { 
     title: "Visualisasi Web GIS", 
     desc: "Hasil akhir pemodelan dan dokumentasi digital fasad bangunan di kawasan Titik Nol Kilometer Yogyakarta disajikan melalui platform WebGIS interaktif berbasis data Mobile LiDAR SLAM untuk mendukung pemantauan dan perencanaan pengelolaan kawasan.",
-    image: "/workflow/step4.jpeg" 
+    image: "/workflow/visualisasi.jpeg" 
   },
 ];
 
 const equipments = [
   { 
     title: "Receiver GPS Geodetik (Geomate SG7)", 
-    desc: "Alat akuisisi data utama untuk menangkap point cloud lingkungan secara real-time sambil bergerak.", 
+    desc: "Receiver GPS Geodetik Geomate SG7 digunakan sebagai data koordinat dalam proses akuisisi. Perangkat ini berfungsi untuk memperoleh koordinat titik kontrol atau titik uji di lapangan dengan ketelitian tinggi, yang selanjutnya digunakan untuk uji akurasi posisi model 3D fasad bangunan hasil Mobile LiDAR SLAM.", 
     img: "/alat/receiver.jpeg" 
   },
   { 
     title: "LiDAR SLAM GS100G", 
-    desc: "Perangkat komputasi spek tinggi untuk registrasi point cloud, filtering, dan rendering model.", 
+    desc: "Perangkat LiDAR SLAM GS-100G berfungsi untuk melakukan akuisisi data point cloud 3D fasad bangunan secara mobile dengan cara menyusuri koridor Jalan Malioboro hingga Titik Nol Kilometer Yogyakarta. Teknologi SLAM memungkinkan pemetaan tetap berlangsung meskipun sinyal GNSS terbatas, sehingga geometri fasad bangunan dapat direkam secara cepat, detail, dan kontinu pada kawasan perkotaan yang padat aktivitas.", 
     img: "/alat/lidar.jpeg" 
   },
 ];
@@ -378,8 +378,8 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h3 className="text-orange-500 font-bold tracking-wider mb-2">HASIL KEGIATAN</h3>
-            <h2 className="text-3xl font-bold text-white">Model 3D Bangunan Heritage</h2>
-            <p className="text-gray-400 mt-4">Hasil rekonstruksi digital dari data point cloud menjadi model 3D bertekstur.</p>
+            <h2 className="text-3xl font-bold text-white">Model 3D Bangunan</h2>
+            {/* <p className="text-gray-400 mt-4">Hasil rekonstruksi digital dari data point cloud menjadi model 3D bertekstur.</p> */}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
