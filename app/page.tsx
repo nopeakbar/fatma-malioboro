@@ -17,12 +17,12 @@ const teamMembers = [
 ];
 
 const products = [
-  { name: "Gedung BNI 46", desc: "Model 3D detail fasad bangunan heritage BNI.", img: "/api/placeholder/400/300" },
-  { name: "Pasar Beringharjo", desc: "Dokumentasi digital pasar bersejarah Yogyakarta.", img: "/api//400/300" },
-  { name: "Gereja Kawasan Malioboro", desc: "Pemodelan arsitektur religius di kawasan nol km.", img: "/api/placeholder/400/300" },
-  { name: "Kantor Pos Besar", desc: "Detail geometri bangunan Kantor Pos titik nol.", img: "/api/placeholder/400/300" },
-  { name: "Teras Malioboro", desc: "Pemetaan kawasan pedestrian dan UMKM.", img: "/api/placeholder/400/300" },
-  { name: "Toko Hamzah Batik", desc: "Model fasad bangunan komersial ikonik.", img: "/api/placeholder/400/300" },
+  { name: "Gedung BNI 46", desc: "Model 3D detail fasad bangunan heritage BNI.", img: "/bangunan/bni.jpeg" },
+  { name: "Pasar Beringharjo", desc: "Dokumentasi digital pasar bersejarah Yogyakarta.", img: "/bangunan/pasar.jpeg" },
+  { name: "Gereja Kawasan Malioboro", desc: "Pemodelan arsitektur religius di kawasan nol km.", img: "/bangunan/gereja.jpeg" },
+  { name: "Kantor Pos Besar", desc: "Detail geometri bangunan Kantor Pos titik nol.", img: "/bangunan/kantor-pos.jpeg" },
+  { name: "Teras Malioboro", desc: "Pemetaan kawasan pedestrian dan UMKM.", img: "/bangunan/teras.jpeg" },
+  { name: "Toko Hamzah Batik", desc: "Model fasad bangunan komersial ikonik.", img: "/bangunan/hamzah.jpeg" },
 ];
 
 const workflows = [
