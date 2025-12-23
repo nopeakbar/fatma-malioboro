@@ -596,10 +596,10 @@ export default function Home() {
         <div className="container mx-auto px-6 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <h5 className="text-xl font-bold">Teknik Geodesi UGM</h5>
-            <p className="text-blue-200 text-sm mt-1">Inventarisasi Kawasan Warisan Budaya.</p>
+            <p className="text-blue-200 text-sm mt-1">PRGG - Kelompok 18.</p>
           </div>
           <div className="text-sm text-blue-300">
-            &copy; {new Date().getFullYear()} Tim Malioboro LiDAR. All rights reserved.
+            &copy; {new Date().getFullYear()} Teknik Geodesi
           </div>
         </div>
       </footer>
