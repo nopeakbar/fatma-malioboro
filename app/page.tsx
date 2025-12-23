@@ -196,12 +196,20 @@ export default function Home() {
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-blue-900">GEODESI<span className="text-orange-600">UGM</span></div>
           
-          <div className="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+          <div className="hidden md:flex space-x-8 text-sm font-medium text-gray-600 items-center">
             {['Home', 'About', 'Equipment', 'Workflow', 'Product', 'Documentation', 'Team'].map((item) => (
               <button key={item} onClick={() => scrollToSection(item.toLowerCase())} className="hover:text-blue-900 transition">
                 {item.toUpperCase()}
               </button>
             ))}
+            <a 
+              href="https://zahranicofadla.github.io/FasadJalanTitik0KM_PRGG18/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-orange-600 hover:bg-orange-700 text-white px-5 py-2 rounded-full text-sm font-bold transition shadow-md flex items-center gap-2"
+            >
+              WEB GIS <ArrowRight size={16} />
+            </a>
           </div>
 
           <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -216,6 +224,14 @@ export default function Home() {
                 {item.toUpperCase()}
               </button>
             ))}
+            <a 
+              href="https://zahranicofadla.github.io/FasadJalanTitik0KM_PRGG18/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-orange-600 hover:bg-orange-700 text-white px-5 py-2 rounded-full text-sm font-bold transition shadow-md text-center flex items-center justify-center gap-2"
+            >
+              WEB GIS <ArrowRight size={16} />
+            </a>
           </div>
         )}
       </nav>
